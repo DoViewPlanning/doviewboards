@@ -56,6 +56,8 @@ A DoView Board may be interactive or non-interactive. It may be implemented in H
 
 For non-technical readers: in the current HTML version, a DoView Board consists of two parts. One part is the reusable engine, which handles the visual layout, interaction, saving, downloading, chat panel, and other general behaviour. The other part is the board content itself, which defines the actual pages, boxes, outcomes, and sources for a particular board.
 
+The reference engine is provided separately so developers can easily adopt the DoView Board layout and behaviour in their own systems without having to extract it from a larger AI prompt. This helps preserve consistency with the DoView approach while still encouraging further development and extension of DoView Boards.
+
 For developers, this means that the AI or author supplies only the board definition, which is then passed into the engine like this:
 
 ```javascript
